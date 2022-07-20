@@ -1,0 +1,14 @@
+{
+    "name": "BFF_Client_API",
+    "title": "B Ffclient Api",
+    "description": "Service to provide the communication between frontend functionality and the database.",
+    "host": "BFF_Client_API-host.com",
+    "path": "/BFF_Client_API",
+    "color": "blue",
+    "contactDetails": {
+        "firstName": "PLEASE_FILL",
+        "lastName": "PLEASE_FILL",
+        "email": "PLEASE_FILL"
+    },
+    "tags": []
+}

@@ -1,0 +1,48 @@
+{
+    "name": "BFF_Client_API",
+    "version": "0.0.1",
+    "main": "index.ts",
+    "scripts": {
+        "start": "ts-node ./src/index.ts",
+        "start:local": "nodemon ./src/index.ts",
+        "build": "yarn run tsc",
+        "test": "jest --coverage",
+        "lint": "eslint . --ext .ts --fix",
+        "test:e2e:stage": "jest --config ./src/api-tests/jest-api.json",
+        "license:report": "version=$(cat package.json | jq -r '.version') && (rm OSS-license-BFF_Client_API.html|| echo '') && license-tool -e BFF_Client_API@${version} -f html>>OSS-license-BFF_Client_API.html"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.6",
+        "@types/jest": "^26.0.20",
+        "@types/supertest": "^2.0.11",
+        "@typescript-eslint/eslint-plugin": "^5.0.0",
+        "@typescript-eslint/parser": "^5.0.0",
+        "eslint": "^8.3.0",
+        "eslint-plugin-jest-formatting": "^3.0.0",
+        "eslint-plugin-jsdoc": "^36.1.0",
+        "jest": "^26.6.3",
+        "nodemon": "^2.0.12",
+        "prettier": "^1.11.1",
+        "supertest": "^6.2.2",
+        "ts-jest": "^26.5.3",
+        "ts-node": "^8.8.2",
+        "typescript": "^4.2.0"
+    },
+    "dependencies": {
+        "@types/multer": "^1.4.7",
+        "axios": "^0.27.2",
+        "body-parser": "^1.20.0",
+        "cls-rtracer": "^2.6.0",
+        "dotenv": "^16.0.1",
+        "express": "^4.17.1",
+        "express-winston": "4.0.5",
+        "form-data": "^4.0.0",
+        "multer": "^1.4.5-lts.1",
+        "openapi-validator-middleware": "^3.0.0",
+        "uuid": "^8.3.2",
+        "winston": "3.3.3"
+    },
+    "resolutions": {
+        "constructs": "3.0.4"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "removeComments": false,
+        "noLib": false,
+        "allowSyntheticDefaultImports": true,
+        "emitDecoratorMetadata": true,
+        "emitDeclarationOnly": false,
+        "experimentalDecorators": true,
+        "declaration": true,
+        "declarationDir": "./dist",
+        "target": "es6",
+        "outDir": "./dist",
+        "baseUrl": "./src",
+        "strictNullChecks": true,
+        "resolveJsonModule": true
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
